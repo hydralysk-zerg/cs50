@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <title>Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        #top {
+            position: relative;
+            top: 300px;
+        }
+        
+        .fig {
+            text-align: center;
+        }
+        
+        button {
+            border: 2px solid black;
+            background: rgb(80, 130, 196);
+            margin-right: 55%;
+            margin-left: 35%;
+            width: 145px;
+            padding: 5px;
+            border-radius: 35px;
+        }
+        
+        button:hover {
+            background: rgb(133, 213, 233);
+        }
+        
+        .parents {
+            margin: auto;
+            padding: 1px;
+        }
+        
+        input {
+            background: #f0f0f0;
+            border: 2px solid black;
+            padding: 10px;
+            width: 500px;
+            margin: 5px;
+            text-align: left;
+            border-radius: 35px;
+        }
+        
+        #link_at_the_top {
+            text-align: right;
+            padding: 10px;
+        }
+    </style>
 </head>
 
-<body style="color: blue; text-align: right;">
+<body id="link_at_the_top">
     <from>
-        <a href="/Users/aleksej/Desktop/CS50/search/search pictures.html">Search pictures</a> <br>
-        <a href="/Users/aleksej/Desktop/CS50/search/advanced search.html">Advanced search</a>
+        <a href="/Users/aleksej/Desktop/CS50/cs50/search pictures.html">Search pictures</a> <br>
+        <a href="/Users/aleksej/Desktop/CS50/cs50/advanced search.html">Advanced search</a>
     </from>
 </body>
 
 <body>
-    <form style="text-align: center; margin: 450px;" action="https://google.com/search">
-        <input type="text" name="q"><br>
-        <button type="submit" class="btn btn-primary btn-sm">Google Search</button>
-    </form>
+    <div id="top">
+        <p class="fig"><img src="/Users/aleksej/Desktop/CS50/cs50/image/Hydrlisk.jpeg" alt="Письма мастера дзен"></p>
+    </div>
 </body>
 
-</html>
+<body>
+    <div id="top">
+        <div class="container">
+            <div class="row">
+                <form action="https://google.com/search" class="parents">
+                    <input type="text" name="q" placeholder="Поле для поиска"><br>
+                    <button type=" submit ">Поиск Google</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

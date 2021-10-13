@@ -1,18 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <title>Advanced search</title>
+    <title>Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        #top {
+            position: relative;
+            top: 100px;
+        }
+        
+        input {
+            margin: 5px 85% auto 5%;
+            text-align: left;
+            border-radius: 5px;
+            background: #f0f0f0;
+            border: 2px solid black;
+            padding: 10px;
+            width: 500px;
+        }
+        
+        .Basic_pictures {
+            text-align: right;
+            padding: 10px;
+        }
+        
+        button {
+            border: 2px solid black;
+            background: rgb(80, 130, 196);
+            width: 145px;
+            padding: 5px;
+            border-radius: 35px;
+            margin: 5px 85% auto 5.5%;
+        }
+        
+        button:hover {
+            background: rgb(133, 213, 233);
+        }
+        
+        #heading {
+            top: 75x;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 300%;
+            font-weight: 500;
+            margin: 75px 5%;
+            color: crimson;
+        }
+    </style>
 </head>
 
-<body>
-    <from style="color: blue; text-align: right;">
-        <a href="/Users/aleksej/Desktop/CS50/search/index.html">Basic search</a>
+
+<body class="Basic_pictures">
+    <from>
+        <a id="Basic_pictures" href="/Users/aleksej/Desktop/CS50/cs50/index.html">Basic pictures</a> <br>
     </from>
-    <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
 </body>
+
+<head>
+
+    <body>
+        <from>
+            <h1 id="heading">Расширенный поиск</h1><br>
+        </from>
+    </body>
+
+    <body>
+        <div id="top">
+
+            <form action="https://www.google.com/search" method="GET" class="parents" name="f">
+                <input type="text" name="as_q" placeholder="усіма цими словами"><br>
+                <input type="text" name="as_epq" placeholder="саме цим словом або фразою"><br>
+                <input type="text" name="as_oq" placeholder="будь-яким із цих слів"><br>
+                <input type="text" name="as_eq" placeholder="жодне з цих слів"><br>
+                <button id="button" type=" submit ">Search</button>
+            </form>
+        </div>
+    </body>
+</head>
 
 </html>

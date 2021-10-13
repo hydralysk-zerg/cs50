@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <title>Search pictures</title>
+    <title>Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <style>
-        #one {
-            color: blue;
+        #top {
+            position: relative;
+            top: 375px;
+        }
+        
+        .fig {
+            text-align: center;
+            top: 200px;
+        }
+        
+        button {
+            border: 2px solid black;
+            background: rgb(80, 130, 196);
+            margin-right: 55%;
+            margin-left: 35%;
+            width: 145px;
+            padding: 5px;
+            border-radius: 35px;
+        }
+        
+        button:hover {
+            background: rgb(133, 213, 233);
+        }
+        
+        .parents {
+            margin: auto;
+            padding: 1px;
+        }
+        
+        input {
+            background: #f0f0f0;
+            border: 2px solid black;
+            padding: 10px;
+            width: 450px;
+            margin: 5px;
+            text-align: left;
+            border-radius: 35px;
+        }
+        
+        #link_at_the_top {
             text-align: right;
+            padding: 10px;
         }
     </style>
+</head>
 
-    <body id='one'>
-        <from><a href="/Users/aleksej/Desktop/CS50/search/index.html">Basic search</a></from>
-    </body>
+<body id="link_at_the_top">
+    <from>
+        <a href="/Users/aleksej/Desktop/CS50/cs50/index.html">Basic pictures</a> <br>
+    </from>
+</body>
 
-    <body>
-        <form style="text-align: center; margin: 450px;" action="https://google.com/search"><input type="text" name="q"><br>
-            <input type="submit" value="Google Search"></form>
-    </body>
+<body>
+    <div id="top">
+        <p class="fig">
+
+        </p>
+    </div>
+</body>
+
+<body>
+    <div id="top">
+        <div class="container">
+            <div class="row">
+                <form action="https://images.google.com/images" class="parents">
+                    <input type="search" name="q" placeholder="Поле для поиска картинки"><br>
+                    <button type="submit">Google картинки</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
