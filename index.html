@@ -7,21 +7,31 @@
     <style>
         #top {
             position: relative;
-            top: 300px;
+            top: 250px;
         }
         
         .fig {
-            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
         
-        button {
+        #button_1 {
             border: 2px solid black;
             background: rgb(80, 130, 196);
-            margin-right: 55%;
-            margin-left: 35%;
+            margin-right: 35px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 145px;
+        }
+        
+        #button_2 {
+            border: 2px solid black;
+            background: rgb(80, 130, 196);
+            margin-right: 75px;
+            margin-left: 10px;
             width: 145px;
             padding: 5px;
-            border-radius: 35px;
+            border-radius: 5px;
         }
         
         button:hover {
@@ -43,23 +53,27 @@
             border-radius: 35px;
         }
         
-        #link_at_the_top {
+        .link_at_the_top {
             text-align: right;
             padding: 10px;
         }
     </style>
 </head>
 
-<body id="link_at_the_top">
+<body class="link_at_the_top">
     <from>
-        <a href="/Users/aleksej/Desktop/CS50/cs50/search pictures.html">Search pictures</a> <br>
-        <a href="/Users/aleksej/Desktop/CS50/cs50/advanced search.html">Advanced search</a>
+        <a href="search pictures.html">Search pictures</a> <br>
+        <a href="advanced search.html">Advanced search</a>
     </from>
 </body>
 
 <body>
     <div id="top">
-        <p class="fig"><img src="/Users/aleksej/Desktop/CS50/cs50/image/Hydrlisk.jpeg" alt="Письма мастера дзен"></p>
+        <div class="container">
+            <div class="row">
+                <p class="fig"><img src="image/giphy.gif" alt="Письма мастера дзен"></p>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -69,7 +83,8 @@
             <div class="row">
                 <form action="https://google.com/search" class="parents">
                     <input type="text" name="q" placeholder="Поле для поиска"><br>
-                    <button type=" submit ">Поиск Google</button>
+                    <button id="button_1" type="submit ">Поиск Google</button><button id="button_2" type="submit " name="btnI ">Мне повезет</button>
+
                 </form>
             </div>
         </div>

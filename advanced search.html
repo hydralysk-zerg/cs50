@@ -5,13 +5,12 @@
     <title>Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
-        #top {
-            position: relative;
-            top: 100px;
+        .fig {
+            margin: 5px 85% 5px 6%;
         }
         
         input {
-            margin: 5px 85% auto 5%;
+            margin: 5px 85% auto 4%;
             text-align: left;
             border-radius: 5px;
             background: #f0f0f0;
@@ -28,10 +27,10 @@
         button {
             border: 2px solid black;
             background: rgb(80, 130, 196);
-            width: 145px;
+            width: 171px;
             padding: 5px;
-            border-radius: 35px;
-            margin: 5px 85% auto 5.5%;
+            border-radius: 5px;
+            margin: 5px 85% 5px 4%;
         }
         
         button:hover {
@@ -39,30 +38,34 @@
         }
         
         #heading {
-            top: 75x;
             text-align: left;
             font-family: 'Times New Roman', Times, serif;
             font-size: 300%;
             font-weight: 500;
-            margin: 75px 5%;
+            margin: 55px 5% 30px;
             color: crimson;
         }
     </style>
 </head>
 
-
-<body class="Basic_pictures">
-    <from>
-        <a id="Basic_pictures" href="/Users/aleksej/Desktop/CS50/cs50/index.html">Basic pictures</a> <br>
-    </from>
-</body>
-
 <head>
+
+    <body class="Basic_pictures">
+        <from>
+            <a id="Basic_pictures" href="index.html">Basic pictures</a> <br>
+        </from>
+    </body>
 
     <body>
         <from>
             <h1 id="heading">Расширенный поиск</h1><br>
         </from>
+    </body>
+
+    <body>
+        <div class="row">
+            <p class="fig"><img src="image/giphy (2).gif" alt="Письма мастера дзен"></p>
+        </div>
     </body>
 
     <body>
@@ -73,7 +76,7 @@
                 <input type="text" name="as_epq" placeholder="саме цим словом або фразою"><br>
                 <input type="text" name="as_oq" placeholder="будь-яким із цих слів"><br>
                 <input type="text" name="as_eq" placeholder="жодне з цих слів"><br>
-                <button id="button" type=" submit ">Search</button>
+                <button id="button" type=" submit ">Расширенный поиск</button>
             </form>
         </div>
     </body>
